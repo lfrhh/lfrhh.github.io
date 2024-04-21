@@ -43,8 +43,8 @@ a {
 }
 
 .card button {
-  width: 170px;
-  height: 150px;
+  width: 100px;
+  height: 80px;
   border-style: none;
   border-radius: 25px;
   margin: 10px;
