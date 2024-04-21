@@ -28,10 +28,10 @@ body {
 }
 
 .card button {
-  border-style: none;
-  border-radius: 25px;
   width: 16px;
   height: 20px;
+  border-style: none;
+  border-radius: 25px;
 }
 
 .avatar {
