@@ -1,8 +1,19 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  width: 100%;
+}
+
 body {
   font-family: gotham, arial, helvetica, sans-serif;
   background-color: #232323;
   color: white;
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .card {
