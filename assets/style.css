@@ -16,6 +16,9 @@ body {
   height: 500px;
   border-radius: 25px;
   text-align: center;
+}
+
+.card div {
   position: relative;
   margin-left: auto;
   margin-right: auto;
