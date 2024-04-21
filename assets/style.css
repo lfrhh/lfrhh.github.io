@@ -1,13 +1,16 @@
-body {
-  font-family: gotham, arial, helvetica, sans-serif;
-  background-color: #232323;
-  color: white;
-  text-align: center;
+div, body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto
+}
+
+body {
+  font-family: gotham, arial, helvetica, sans-serif;
+  background-color: #232323;
+  color: white;
+  text-align: center;
 }
 
 .card {
@@ -16,11 +19,6 @@ body {
   height: 500px;
   border-radius: 25px;
   text-align: center;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto
 }
 
 .avatar {
