@@ -14,6 +14,12 @@ body {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
+  align-items: center;
+}
+
+a {
+  color: #6d9bc3;
+  text-decoration: none;
 }
 
 .card {
