@@ -1,19 +1,10 @@
-html, body {
-  height: 100%;
-}
-
-html {
-  display: table;
-  width: 100%;
-}
-
 body {
   font-family: gotham, arial, helvetica, sans-serif;
   background-color: #232323;
   color: white;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -22,6 +13,14 @@ body {
   height: 500px;
   border-radius: 25px;
   text-align: center;
+  position: relative;
+}
+
+.card div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
 }
 
 .avatar {
