@@ -11,12 +11,9 @@ body {
   height: 500px;
   border-radius: 25px;
   text-align: center;
-}
-
-.card div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .avatar {
