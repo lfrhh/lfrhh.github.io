@@ -43,10 +43,11 @@ a {
 }
 
 .card button {
-  width: 50px;
-  height: 60px;
+  width: 170px;
+  height: 150px;
   border-style: none;
   border-radius: 25px;
+  margin: 10px;
 }
 
 .avatar {
