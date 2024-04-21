@@ -27,6 +27,11 @@ body {
   align-items: center;
 }
 
+.card button {
+  borde-style: none;
+  border-radius: 25px;
+}
+
 .avatar {
   width: 160px;
   height: 160px;
