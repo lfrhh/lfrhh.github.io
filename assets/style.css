@@ -3,9 +3,9 @@ body {
   background-color: #232323;
   color: white;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  margin: 0 auto
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
