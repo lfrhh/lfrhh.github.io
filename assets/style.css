@@ -20,9 +20,9 @@ header {
   justify-content: start;
 }
 
-header .menu {
+header .menu ul li{
  display: flex;
- justify-content: space-around;
+ justify-content: end;
 }
 
 
