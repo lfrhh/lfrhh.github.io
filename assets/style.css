@@ -16,8 +16,15 @@ html {
 header {
   width: 100%;
   background-color: #505050;
-  justify-content: space-around;
+  display: flex;
+  justify-content: start;
 }
+
+header .menu {
+ display: flex;
+ justify-content: space-around;
+}
+
 
 body {
   font-family: gotham, arial, helvetica, sans-serif;
