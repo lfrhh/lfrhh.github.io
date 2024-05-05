@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
 }
@@ -7,15 +13,17 @@ html {
   width: 100%;
 }
 
+header {
+  width: 100%;
+  background-color: #505050;
+  justify-content: space-around;
+}
+
 body {
   font-family: gotham, arial, helvetica, sans-serif;
   background-color: #232323;
   color: white;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
 }
 
 a {
@@ -27,6 +35,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  display: table-cell;
+  vertical-align: middle;
+  align-items: center;
 }
 
 .card {
