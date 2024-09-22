@@ -1,0 +1,268 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(./commands.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    color: var(--blue);
+}
+
+:root {
+    --black: #121212;
+    --grey: #5f5f5f;
+    --cleanblue: #8cb5d8;
+    --blue: #6d9bc3;
+    --pink: #f48fb1;
+    --semidarkpink: #d64e84;
+    --darkpink: #c2185b;
+    --white: #f2f2f2;
+    --dwhite: #d9d9d9;
+    --box: #d5dbf2;
+}
+
+body {
+    width: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+main.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 100vh;
+    gap: 2rem;
+    flex-grow: 1;
+    border-bottom: 1px solid var(--dwhite);
+}
+
+main.main div.texts {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.main-text {
+    font-size: 2.2rem;
+    background-image: linear-gradient(
+        to right,
+        var(--darkpink),
+        var(--blue) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main.main div.texts p {
+    font-size: 1.4rem;
+}
+
+main.main div.texts div.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+main.main div.texts div.buttons button {
+    padding: 0.8rem 2rem;
+    background-color: var(--pink);
+    color: var(--black);
+    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-weight: 700;
+}
+
+main.main div.texts div.buttons button:hover {
+    cursor: pointer;
+    background-color: var(--darkpink);
+    color: var(--white);
+}
+
+section.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-grow: 1;
+    height: auto;
+    padding: 4rem 0;
+}
+
+section.features div.boxies {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+section.features div.boxies div.box {
+    width: 240px;
+    height: 320px;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    background-color: var(--box);
+    color: var(--black);
+    border-radius: 4px;
+    box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+
+section.features div.boxies div.box:hover {
+    scale: 1.05;
+}
+
+section.features div.boxies i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Estilizando a scrollbar para WebKit */
+::-webkit-scrollbar {
+    width: 6px; /* Largura da scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--grey); /* Cor de fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--pink); /* Cor do polegar */
+    border-radius: 6px; /* Bordas arredondadas */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--darkpink); /* Cor do polegar ao passar o mouse */
+}
+
+/* Animação para os ícones flutuarem */
+main.main div.content-image {
+    position: relative;
+}
+
+main.main div.content-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 100%;
+}
+
+main.main div.content-image .icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 360px; /* Tamanho do círculo onde os ícones vão flutuar */
+    height: 360px;
+    margin-top: -200px; /* Ajusta a posição vertical */
+    margin-left: -200px; /* Ajusta a posição horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.main div.content-image .icon {
+    position: absolute;
+    font-size: 26px;
+    animation: float 6s ease-in-out infinite;
+}
+
+main.main div.content-image .icon:nth-child(1) {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+main.main div.content-image .icon:nth-child(2) {
+    top: 95%;
+    left: 80%;
+    animation-delay: 1s;
+}
+
+main.main div.content-image .icon:nth-child(3) {
+    top: 20%;
+    left: 95%;
+    animation-delay: 2s;
+}
+
+main.main div.content-image .icon:nth-child(4) {
+    top: 80%;
+    left: 10%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.keep-scrolling {
+    margin-top: 2rem;
+    opacity: 0.4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+@media screen and (max-width: 768px) {
+    main.main div.content-image img {
+        width: 230px;
+    }
+
+    main.main div.content-image .icons {
+        width: 240px; /* Tamanho do círculo onde os ícones vão flutuar */
+        height: 240px;
+        margin-top: -140px; /* Ajusta a posição vertical */
+        margin-left: -130px; /* Ajusta a posição horizontal */
+    }
+
+    main.main div.texts {
+        padding: 1rem;
+    }
+
+    main.main div.texts div.buttons {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}

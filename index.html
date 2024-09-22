@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Descrições do código -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Meta Tags -->
+    <meta name="theme-color" content="#f48fb1">
+    <meta name="robots" content="index">
+    <meta name="language" content="pt-BR">
+    <meta name="audience" content="all">
+    <meta name="author" content="Sayuri">
+    <meta name="copyright" content="Sayuri">
+    <meta name="distribution" content="global">
+    <meta property="og:title" content="Sayuri - Website">
+    <meta name="keywords" content="bot, discord, multifunctional, economy, moderation, utilities, social">
+    <meta name="description" content="I am a Brazilian multifunctional bot, I present several commands to help and entertain you. I have commands for: Economy, Moderation, Utilities, Social, among others.">
+    <meta property="og:description" content="I am a Brazilian multifunctional bot, I present several commands to help and entertain you. I have commands for: Economy, Moderation, Utilities, Social, among others.">
+    <meta property="og:image" content="/assets/icon.png">
+    <link rel="icon" href="/assets/icon.png" type="image/png">
+
+    <!-- Título da página -->
+    <title>Sayuri - Home</title>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="/assets/stylesheet/style.css">
+    <!-- Versão do desenvolvedor -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <!-- Versão de produção -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16"></script> -->
+    <!-- Link para o Font Awesome -->
+    <script src="https://kit.fontawesome.com/a2640589f9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Início do Vue.js -->
+    <div id="app">
+        <!-- Conteúdo principal -->
+        <main class="main">
+            <div class="content-image">
+                <img src="/assets/sayuri.png" alt="icon" draggable="false">
+                <div class="icons">
+                    <i class="icon">⭐</i>
+                    <i class="icon">🌟</i>
+                    <i class="icon">✨</i>
+                    <i class="icon">💫</i>
+                </div>
+            </div>
+            <div class="texts">
+                <h2 class="main-text">Sayuri</h2>
+                <p>A multifunctional Brazilian bot</p>
+                <div class="buttons">
+                    <button @click="openLink('https://discord.com/oauth2/authorize?client_id=1198713733745221813')">Add Me</button>
+                    <button @click="openLink('https://discord.com/invite/spP9Er5u78')">Support Server</button>
+                    <button @click="redirect('/commands.html')">Commands</button>
+                </div>
+                <span class="keep-scrolling"><i class="fa-solid fa-computer-mouse"></i> Keep scrolling</span>
+            </div>
+        </main>
+
+        <section class="features">
+            <h2 class="main-text">Features</h2>
+
+            <div class="boxies">
+                <div class="box">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Setup</h3>
+                    <p>I'm a expert in configurations. I'm ready to assist you in managing your server.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <h3>Autorole</h3>
+                    <p>I has an autorole system, where members join and automatically receive the configured role.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-vault"></i>
+                    <h3>Economy</h3>
+                    <p>I have commands for economy, such as balance, deposit, and more.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-shield-alt"></i>
+                    <h3>Moderation</h3>
+                    <p>I have commands for moderation, such as ban, kick, and more.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Utilities</h3>
+                    <p>I have commands for utilities, such as weather, time, and more.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-comments"></i>
+                    <h3>Social</h3>
+                    <p>I have commands for social, such as marry, divorce, hug and more.</p>
+                </div>
+                <!-- Economy, Moderation, Utils, fun, NSFW -->
+                <div class="box">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h3>NSFW</h3>
+                    <p>I have commands NSFW.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Rodapé -->
+        <footer>
+            <p>Sayuri - A multifunctional bot developed by Sayuri Team.</p>
+            <p>&#169;2024 - Sayuri Team. All rights reserved.</p>
+
+            <a href="/terms.html">Terms of Service</a>
+            <a href="/privacy.html">Privacy Policy</a>
+        </footer>
+    </div>
+
+    <script>
+        // Início do Vue.js
+        new Vue({
+            el: '#app',
+            methods: {
+                redirect(url) {
+                    window.location.href = url;
+                },
+                openLink(url) {
+                    window.open(url, '_blank');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

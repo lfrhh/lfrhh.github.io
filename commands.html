@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Tags -->
+    <meta name="theme-color" content="#f48fb1">
+    <meta name="robots" content="index">
+    <meta name="language" content="pt-BR">
+    <meta name="audience" content="all">
+    <meta name="author" content="Sayuri">
+    <meta name="copyright" content="Sayuri">
+    <meta name="distribution" content="global">
+    <meta property="og:title" content="Sayuri - Commands">
+    <meta name="keywords" content="bot, discord, multifunctional, economy, moderation, utilities, social">
+    <meta name="description" content="I am a Brazilian multifunctional bot, I present several commands to help and entertain you. I have commands for: Economy, Moderation, Utilities, Social, among others.">
+    <meta property="og:description" content="I am a Brazilian multifunctional bot, I present several commands to help and entertain you. I have commands for: Economy, Moderation, Utilities, Social, among others.">
+    <meta property="og:image" content="/assets/icon.png">
+    <link rel="icon" href="/assets/icon.png" type="image/png">
+
+    <!-- Título da página -->
+    <title>Sayuri - Commands</title>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="/assets/stylesheet/style.css">
+    <!-- Versão do desenvolvedor -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <!-- Versão de produção -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16"></script> -->
+    <!-- Link para o Font Awesome -->
+    <script src="https://kit.fontawesome.com/a2640589f9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="commands">
+        <main class="cmd-main-content">
+            <button class="back-button" @click="backToHome()">
+                <i class="fa-solid fa-circle-left"></i>
+                <p>Back to homepage</p>
+            </button>
+            <div class="command-action">
+                <h2 class="main-text">Commands</h2>
+            </div>
+
+            <div v-for="(cmdCategory, categoryName) in categorizedCommands" :key="categoryName" class="category">
+
+                <!-- Accordion para as categorias -->
+                <button class="accordion" @click="toggleCategory(categoryName)">
+                    <!-- Verifica se o primeiro item da categoria é um ícone e o exibe -->
+                    <i v-if="typeof cmdCategory[0] === 'string'" :class="['fas', cmdCategory[0], 'category-icon']"></i>
+                    {{ categoryNames[categoryName] }}
+                </button>
+
+                <!-- Painel para os comandos dentro da categoria -->
+                <div class="painel" :class="{ show: activeCategory === categoryName }">
+
+                    <!-- Accordion para os comandos dentro da categoria -->
+                    <div v-for="(cmd, index) in getCommands(cmdCategory)" :key="index" class="sec">
+                        <button class="accordion" @click="toggleCommand(categoryName, index)">
+                            <span>
+                                {{ cmd.name }}
+                                <!-- Se o comando for NSFW ele exibe a tag (+18) -->
+                                <span v-if="categoryNames[categoryName] === 'NSFW'">(+18)</span>
+                            </span>
+                        </button>
+                        <div class="painel" :class="{ show: activeCommand[categoryName] === index }">
+                            <p>
+                                {{ cmd.description }}
+                            </p>
+                            <p>
+                                <strong>Usage:</strong>
+                                <strong style="color: var(--black)"><span v-if="categoryNames[categoryName] === 'NSFW'">
+                                        {{ settings.NSFWprefix }}</span><span v-else>
+                                        {{ settings.prefix }}</span></strong>
+                                {{ cmd.usage }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#commands',
+            data: {
+                settings: {},
+                categorizedCommands: {},
+                activeCategory: null, // Armazena qual categoria está ativa
+                activeCommand: {}, // Armazena o comando ativo dentro de cada categoria
+                // Nomes amigáveis para as categorias
+                categoryNames: {
+                    mod: 'Moderation',
+                    utils: 'Utility',
+                    social: 'Social',
+                    economy: 'Economy',
+                    others: 'Others',
+                    nsfw: 'NSFW',
+                }
+            },
+            methods: {
+                // Alterna a visibilidade do painel de comandos dentro de uma categoria
+                toggleCategory(category) {
+                    this.activeCategory = this.activeCategory === category ? null : category;
+                },
+                // Alterna a visibilidade do painel de comandos de um comando dentro de uma categoria
+                toggleCommand(category, index) {
+                    this.$set(this.activeCommand, category, this.activeCommand[category] === index ? null : index);
+                },
+                // Retorna os comandos de uma categoria, retirando o primeiro item caso seja um ícone
+                getCommands(category) {
+                    // Se o primeiro item for string (ícone), retorna o restante
+                    return typeof category[0] === 'string' ? category.slice(1) : category;
+                },
+                // Redireciona para uma página externa
+                backToHome() {
+                    window.location.href = "/";
+                },
+            },
+            created() {
+                fetch('/assets/commands.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        this.categorizedCommands = data; // Armazena as categorias diretamente do JSON
+                    })
+                    .catch(error => console.error('Erro ao carregar os comandos:', error));
+
+                fetch('/assets/settings.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        this.settings = data; // Armazena as configurações diretamente do JSON
+                    })
+                    .catch(error => console.error('Erro ao carregar as configurações:', error));
+            }
+        });
+    </script>
+</body>
+
+</html>

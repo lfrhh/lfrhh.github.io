@@ -1,0 +1,369 @@
+{
+    "mod": [
+        "fa-shield-alt",
+        {
+            "name": "welcome-system",
+            "description": "Configure the server's welcome message",
+            "usage": "welcome-system"
+        },
+        {
+            "name": "bye-system",
+            "description": "Configure server outgoing message",
+            "usage": "bye-system"
+        }
+    ],
+    "utils": [
+        "fa-chart-line",
+        {
+            "name": "help",
+            "description": "Display available commands and their usage",
+            "usage": "help"
+        },
+        {
+            "name": "botinfo",
+            "description": "Display information about the bot",
+            "usage": "botinfo"
+        },
+        {
+            "name": "ping",
+            "description": "Check the bot's latency",
+            "usage": "ping"
+        },
+        {
+            "name": "avatar",
+            "description": "Display the avatar of a user",
+            "usage": "avatar"
+        },
+        {
+            "name": "weather",
+            "description": "Get weather information for a location",
+            "usage": "weather [location]"
+        },
+        {
+            "name": "colorinfo",
+            "description": "Accordion para exibir informações sobre cores.",
+            "usage": "colorinfo [color]"
+        },
+        {
+            "name": "translate",
+            "description": "Translate text between languages",
+            "usage": "translate [language] [text]"
+        },
+        {
+            "name": "userinfo",
+            "description": "Display information about a user",
+            "usage": "userinfo [@user]"
+        },
+        {
+            "name": "serverinfo",
+            "description": "Display information about the server",
+            "usage": "serverinfo"
+        },
+        {
+            "name": "channelinfo",
+            "description": "Display information about a channel",
+            "usage": "channelinfo [#channel]"
+        },
+        {
+            "name": "roleinfo",
+            "description": "Display information about a role",
+            "usage": "roleinfo [@role]"
+        },
+        {
+            "name": "emojiinfo",
+            "description": "Display information about an emoji",
+            "usage": "emojiinfo [emoji]"
+        },
+        {
+            "name": "servericon",
+            "description": "Display the server's icon",
+            "usage": "servericon"
+        },
+        {
+            "name": "language",
+            "description": "Set the bot's language for responses",
+            "usage": "language"
+        }
+    ],
+    "social": [
+        "fa-comments",
+        {
+            "name": "profile",
+            "description": "Display user profile information",
+            "usage": "profile [user]"
+        },
+        {
+            "name": "kiss",
+            "description": "Send a kiss to another user",
+            "usage": "kiss [@user]"
+        },
+        {
+            "name": "hug",
+            "description": "Give a hug to another user",
+            "usage": "hug [@user]"
+        },
+        {
+            "name": "slap",
+            "description": "Give a slap to another user",
+            "usage": "slap [@user]"
+        },
+        {
+            "name": "headpat",
+            "description": "Give a headpat to another user",
+            "usage": "headpat [@user]"
+        },
+        {
+            "name": "cry",
+            "description": "Express that you're crying",
+            "usage": "cry"
+        },
+        {
+            "name": "ship",
+            "description": "Ship two users together",
+            "usage": "ship [@user1] [@user2]"
+        },
+        {
+            "name": "marry",
+            "description": "Marry another user",
+            "usage": "marry [@user]"
+        },
+        {
+            "name": "divorce",
+            "description": "Divorce your partner",
+            "usage": "divorce"
+        }
+    ],
+    "economy": [
+        "fa-vault",
+        {
+            "name": "fishing",
+            "description": "Fish for some money",
+            "usage": "fishing"
+        },
+        {
+            "name": "balance",
+            "description": "Check your balance",
+            "usage": "balance"
+        },
+        {
+            "name": "work",
+            "description": "Work to earn some money",
+            "usage": "work"
+        },
+        {
+            "name": "shop",
+            "description": "Visit the shop to buy items",
+            "usage": "shop"
+        },
+        {
+            "name": "inventory",
+            "description": "Check your inventory",
+            "usage": "inventory"
+        },
+        {
+            "name": "cooldowns",
+            "description": "Check your command cooldowns",
+            "usage": "cooldowns"
+        },
+        {
+            "name": "leaderboard",
+            "description": "View the server's economy leaderboard",
+            "usage": "leaderboard"
+        },
+        {
+            "name": "daily",
+            "description": "Claim your daily reward",
+            "usage": "daily"
+        },
+        {
+            "name": "mine-crypto",
+            "description": "Mine cryptocurrency",
+            "usage": "mine-crypto"
+        },
+        {
+            "name": "breeze",
+            "description": "Feel the breeze and relax",
+            "usage": "breeze"
+        },
+        {
+            "name": "pay",
+            "description": "Pay someone money",
+            "usage": "pay [@user] [number]"
+        },
+        {
+            "name": "bet",
+            "description": "Bet some money",
+            "usage": "bet [@user] [number]"
+        }
+    ],
+    "others": [
+        "fa-cheese",
+        {
+            "name": "minecraft-user",
+            "description": "Lookup Minecraft user information",
+            "usage": "minecraft-user"
+        },
+        {
+            "name": "minecraft-server",
+            "description": "Lookup Minecraft server information",
+            "usage": "minecraft-server"
+        },
+        {
+            "name": "music",
+            "description": "Listen to music",
+            "usage": "music [song]"
+        },
+        {
+            "name": "pokédex",
+            "description": "Lookup information about Pokémon",
+            "usage": "pokédex [pokemon]"
+        },
+        {
+            "name": "periodic-table",
+            "description": "Lookup information about elements on the periodic table",
+            "usage": "periodic-table [element]"
+        },
+        {
+            "name": "genshin",
+            "description": "Lookup information about Genshin Impact. Categories: Characters, consumables/food, consumables/potions, enemies, elements",
+            "usage": "genshin [category] [name]"
+        },
+        {
+            "name": "anime",
+            "description": "See information about an anime",
+            "usage": "[name]"
+        }
+    ],
+    "nsfw": [
+        "fa-exclamation-triangle",
+        {
+            "name": "discover",
+            "description": "Have a complete search tab in the palm of your hand.",
+            "usage": "discover"
+        },
+        {
+            "name": "hentai",
+            "description": "Sends one or more hentai gifs or images.",
+            "usage": "hentai",
+            "usage_with_amount": "hentai"
+        },
+        {
+            "name": "hboobs",
+            "description": "Sends one or more hentai boobs gifs or images.",
+            "usage": "hboobs",
+            "usage_with_amount": "hboobs"
+        },
+        {
+            "name": "horal",
+            "description": "Sends one or more hentai oral sex gifs or images.",
+            "usage": "horal",
+            "usage_with_amount": "horal"
+        },
+        {
+            "name": "hass",
+            "description": "Sends one or more hentai ass gifs or images.",
+            "usage": "hass",
+            "usage_with_amount": "hass"
+        },
+        {
+            "name": "hanal",
+            "description": "Sends hentai anal sex gifs or images.",
+            "usage": "hanal"
+        },
+        {
+            "name": "hbdsm",
+            "description": "Sends hentai bdsm gifs or images.",
+            "usage": "hbdsm"
+        },
+        {
+            "name": "ecchi",
+            "description": "Sends one or more ecchi gifs or images.",
+            "usage": "ecchi"
+        },
+        {
+            "name": "paizuri",
+            "description": "Sends one or more hentai boobs-handjob gifs or images.",
+            "usage": "paizuri"
+        },
+        {
+            "name": "yaoi",
+            "description": "Sends yaoi gifs or images.",
+            "usage": "yaoi"
+        },
+        {
+            "name": "yuri",
+            "description": "Sends yuri gifs or images.",
+            "usage": "yuri"
+        },
+        {
+            "name": "futa",
+            "description": "Sends futa hentai gifs or images.",
+            "usage": "futa"
+        },
+        {
+            "name": "trap",
+            "description": "Sends trap hentai gifs or images.",
+            "usage": "trap"
+        },
+        {
+            "name": "r34",
+            "description": "Searches for one or more images on rule34.xxx",
+            "usage": "r34 [tag]"
+        },
+        {
+            "name": "rlass",
+            "description": "Sends real life ass gifs or images",
+            "usage": "rlass"
+        },
+        {
+            "name": "rlboobs",
+            "description": "Sends real life boobs gifs or images",
+            "usage": "rlboobs"
+        },
+        {
+            "name": "rlpussy",
+            "description": "Sends real life pussy gifs or images",
+            "usage": "rlpussy"
+        },
+        {
+            "name": "rllesbian",
+            "description": "Sends real life lesbian gifs or images",
+            "usage": "rllesbian"
+        },
+        {
+            "name": "rlgay",
+            "description": "Sends real life gay gifs or images",
+            "usage": "rlgay"
+        },
+        {
+            "name": "rlporn",
+            "description": "Sends real life porn gifs or images",
+            "usage": "rlporn"
+        },
+        {
+            "name": "rlanal",
+            "description": "Sends real life anal gifs or images",
+            "usage": "rlanal"
+        },
+        {
+            "name": "realb",
+            "description": "Searches for one or more images on realbooru.com",
+            "usage": "realb"
+        },
+        {
+            "name": "hneko",
+            "description": "Sends hentai neko gifs or images",
+            "usage": "hneko"
+        },
+        {
+            "name": "rlcreampie",
+            "description": "Sends real life creampie gifs or images",
+            "usage": "rlcreampie"
+        },
+        {
+            "name": "rlblowjob",
+            "description": "Sends real life blowjob sex gifs or images",
+            "usage": "rlblowjob"
+        }
+    ]
+}
