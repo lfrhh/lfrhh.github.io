@@ -1,5 +1,4 @@
 # 💫 Sayuri
-<<<<<<< HEAD
 
 > **Sayuri is a multifunctional Brazilian bot designed to help and entertain you with various commands.**
 
@@ -41,4 +40,3 @@ You can support Sayuri by voting for it on Top.gg:
 > _See her commands using or /help_
 
 > **I was completely made in the BDScript 2 programming language, If you can help me or are interested in me, add me to your server by [clicking here](https://discord.com/api/oauth2/authorize?client_id=1198713733745221813&permissions=964220537920&scope=bot%20applications.commands) or vote for me on [Top.gg](https://top.gg/bot/1198713733745221813/vote)**
->>>>>>> 690846f7c362f2462d48761bca0b5a013610c439
