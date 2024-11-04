@@ -4,7 +4,6 @@
 
 ## Features
 
-- **Economy**: Manage your virtual finances.
 - **Moderation**: Keep order in your server.
 - **Utilities**: Access handy tools to enhance your experience.
 - **Social**: Interact and have fun with friends.
