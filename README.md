@@ -33,7 +33,7 @@ You can support Sayuri by voting for it on Top.gg:
 
 **Thank you for your interest in Sayuri! We are here to make your Discord experience even better.**
 =======
-> **I am a Brazilian multifunctional bot, I present several commands to help and entertain you. I have commands for: `Economy, Moderation, Utilities, Social, among others.`**
+> **I am a Brazilian multifunctional bot, I present several commands to help and entertain you. I have commands for: `Moderation, Utilities, Social, among others.`**
 
 > _You can change her language from Portuguese to English using /language_
 > _See her commands using or /help_
