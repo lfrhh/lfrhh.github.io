@@ -10,6 +10,16 @@
             "name": "bye-system",
             "description": "Configure server outgoing message",
             "usage": "bye-system"
+        },
+        {
+            "name": "autorole-user",
+            "description": "Configure auto-role roles for users. (Up to 4 roles)",
+            "usage": "autorole-user [@role]"
+        },
+        {
+            "name": "autorole-app",
+            "description": "Configure auto-role roles for apps. (Up to 4 roles)",
+            "usage": "autorole-app [@role]"
         }
     ],
     "utils": [
