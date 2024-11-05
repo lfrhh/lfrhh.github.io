@@ -126,8 +126,7 @@
             "name": "ship",
             "description": "Ship two users together",
             "usage": "ship [@user1] [@user2]"
-        },
-        {
+        }
     ],
     "others": [
         "fa-cheese",
