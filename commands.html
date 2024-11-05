@@ -59,8 +59,6 @@
                         <button class="accordion" @click="toggleCommand(categoryName, index)">
                             <span>
                                 {{ cmd.name }}
-                                <!-- Se o comando for NSFW ele exibe a tag (+18) -->
-                                <span v-if="categoryNames[categoryName] === 'NSFW'">(+18)</span>
                             </span>
                         </button>
                         <div class="painel" :class="{ show: activeCommand[categoryName] === index }">
@@ -69,9 +67,7 @@
                             </p>
                             <p>
                                 <strong>Usage:</strong>
-                                <strong style="color: var(--black)"><span v-if="categoryNames[categoryName] === 'NSFW'">
-                                        {{ settings.NSFWprefix }}</span><span v-else>
-                                        {{ settings.prefix }}</span></strong>
+                                <strong style="color: var(--black)">{{ settings.prefix }}</strong>
                                 {{ cmd.usage }}
                             </p>
                         </div>
