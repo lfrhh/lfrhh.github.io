@@ -190,5 +190,5 @@
             "description": "See information about an anime",
             "usage": "[name]"
         }
-    ],
+    ]
 }
