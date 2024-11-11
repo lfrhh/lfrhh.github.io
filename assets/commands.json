@@ -113,6 +113,16 @@
             "usage": "slap [@user]"
         },
         {
+            "name": "bite",
+            "description": "Bite another user",
+            "usage": "bite [@user]"
+        },
+        {
+            "name": "throw",
+            "description": "Throw another user",
+            "usage": "throw [@user]"
+        },
+        {
             "name": "headpat",
             "description": "Give a headpat to another user",
             "usage": "headpat [@user]"
@@ -121,6 +131,21 @@
             "name": "cry",
             "description": "Express that you're crying",
             "usage": "cry"
+        },
+        {
+            "name": "bored",
+            "description": "Express that you're bored",
+            "usage": "bored"
+        },
+        {
+            "name": "blush",
+            "description": "Express that you're blushed",
+            "usage": "blush"
+        },
+        {
+            "name": "dance",
+            "description": "Show off your dance moves!",
+            "usage": "dance"
         },
         {
             "name": "ship",
