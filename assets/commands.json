@@ -153,21 +153,39 @@
             "usage": "ship [@user1] [@user2]"
         }
     ],
+   "ai": [
+        "fa-cheese",
+        {
+            "name": "preference",
+            "description": "Configure your AI preferences",
+            "usage": "preference"
+        },
+        {
+            "name": "ai",
+            "description": "Chat with an AI",
+            "usage": "ai [prompt]"
+        },
+        {
+            "name": "imagine",
+            "description": "Create an image with AI",
+            "usage": "imagine [prompt]"
+        }
+    ],
     "others": [
         "fa-cheese",
         {
             "name": "minecraft-user",
             "description": "Lookup Minecraft user information",
-            "usage": "minecraft-user"
+            "usage": "minecraft-user [minecraft-username]"
         },
         {
             "name": "minecraft-server",
             "description": "Lookup Minecraft server information",
-            "usage": "minecraft-server"
+            "usage": "minecraft-server [url/server ip]"
         },
         {
             "name": "music",
-            "description": "Listen to music",
+            "description": "Lookup song information",
             "usage": "music [song]"
         },
         {
