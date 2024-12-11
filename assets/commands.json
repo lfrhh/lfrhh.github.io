@@ -154,7 +154,7 @@
         }
     ],
    "ai": [
-        "fa-user-circle-o",
+        "fa-user-circle",
         {
             "name": "preference",
             "description": "Configure your AI preferences",
