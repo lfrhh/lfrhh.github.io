@@ -154,7 +154,7 @@
         }
     ],
    "ai": [
-        "fa-cheese",
+        "fa-user-circle-o",
         {
             "name": "preference",
             "description": "Configure your AI preferences",
