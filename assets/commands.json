@@ -169,7 +169,12 @@
             "name": "imagine",
             "description": "Create an image with AI",
             "usage": "imagine [prompt]"
-        }
+        },
+       {
+           "name": "removebg",
+           "description": "Remove the background from your photos",
+           "usage": "removebg [image]"
+       }
     ],
     "others": [
         "fa-cheese",
