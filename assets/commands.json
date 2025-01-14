@@ -182,7 +182,7 @@
        },
        {
            "name": "upscale",
-           "description": Improve the quality of your photos",
+           "description": "Improve the quality of your photos",
            "usage": "upscale [image] [scale]"
        }
     ],
