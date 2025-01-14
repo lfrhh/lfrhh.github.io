@@ -151,6 +151,11 @@
             "name": "ship",
             "description": "Ship two users together",
             "usage": "ship [@user1] [@user2]"
+        },
+        {
+            "name": "social-medias",
+            "description": "Browse social media",
+            "usage": "social-medias [app] [query] [view]"
         }
     ],
    "ai": [
@@ -174,6 +179,11 @@
            "name": "removebg",
            "description": "Remove the background from your photos",
            "usage": "removebg [image]"
+       },
+       {
+           "name": "upscale",
+           "description": Improve the quality of your photos",
+           "usage": "upscale [image] [scale]"
        }
     ],
     "others": [
