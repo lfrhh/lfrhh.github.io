@@ -197,7 +197,7 @@
        }
     ],
    "fun": [
-        "fa-user-circle",
+        "fa-gift",
         {
             "name": "minesweeper",
             "description": "Play minesweeper",
