@@ -1,0 +1,278 @@
+{
+    "mod": [
+        "fa-shield-alt",
+        {
+            "name": "welcome-system",
+            "description": "Configura il messaggio di benvenuto del server",
+            "usage": "welcome-system"
+        },
+        {
+            "name": "bye-system",
+            "description": "Configura il messaggio di uscita del server",
+            "usage": "bye-system"
+        },
+        {
+            "name": "autorole-user",
+            "description": "Configura ruoli automatici per gli utenti. (Fino a 4 ruoli)",
+            "usage": "autorole-user [@role]"
+        },
+        {
+            "name": "autorole-app",
+            "description": "Configura ruoli automatici per le app. (Fino a 4 ruoli)",
+            "usage": "autorole-app [@role]"
+        }
+    ],
+    "utils": [
+        "fa-chart-line",
+        {
+            "name": "help",
+            "description": "Mostra i comandi disponibili e il loro utilizzo",
+            "usage": "help"
+        },
+        {
+            "name": "botinfo",
+            "description": "Mostra informazioni sul bot",
+            "usage": "botinfo"
+        },
+        {
+            "name": "ping",
+            "description": "Verifica la latenza del bot",
+            "usage": "ping"
+        },
+        {
+            "name": "avatar",
+            "description": "Mostra l'avatar di un utente",
+            "usage": "avatar"
+        },
+        {
+            "name": "weather",
+            "description": "Ottieni informazioni meteorologiche su un luogo",
+            "usage": "weather [location]"
+        },
+        {
+            "name": "colorinfo",
+            "description": "Accordion para exibir informações sobre cores.",
+            "usage": "colorinfo [color]"
+        },
+        {
+            "name": "translate",
+            "description": "Translate text between languages",
+            "usage": "translate [language] [text]"
+        },
+        {
+            "name": "userinfo",
+            "description": "Mostra informazioni su un utente",
+            "usage": "userinfo [@user]"
+        },
+        {
+            "name": "serverinfo",
+            "description": "Mostra informazioni sul server",
+            "usage": "serverinfo"
+        },
+        {
+            "name": "channelinfo",
+            "description": "Mostra informazioni su un canale",
+            "usage": "channelinfo [#channel]"
+        },
+        {
+            "name": "roleinfo",
+            "description": "Mostra informazioni su un ruolo",
+            "usage": "roleinfo [@role]"
+        },
+        {
+            "name": "emojiinfo",
+            "description": "Mostra informazioni su un'emoji",
+            "usage": "emojiinfo [emoji]"
+        },
+        {
+            "name": "servericon",
+            "description": "Mostra l'icona del server",
+            "usage": "servericon"
+        },
+        {
+            "name": "language",
+            "description": "Imposta la lingua del bot per le risposte",
+            "usage": "language"
+        }
+    ],
+    "social": [
+        "fa-comments",
+        {
+            "name": "profile",
+            "description": "Visualizza il tuo profilo",
+            "usage": "profile [@user]"
+        },
+        {
+            "name": "reputation",
+            "description": "Invia una reputazione a un altro utente",
+            "usage": "reputation [@user]"
+        },
+        {
+            "name": "kiss",
+            "description": "Invia un bacio a un altro utente",
+            "usage": "kiss [@user]"
+        },
+        {
+            "name": "hug",
+            "description": "Dai un abbraccio a un altro utente",
+            "usage": "hug [@user]"
+        },
+        {
+            "name": "slap",
+            "description": "Dai uno schiaffo a un altro utente",
+            "usage": "slap [@user]"
+        },
+        {
+            "name": "bite",
+            "description": "Mordi un altro utente",
+            "usage": "bite [@user]"
+        },
+        {
+            "name": "throw",
+            "description": "Lancia un altro utente",
+            "usage": "throw [@user]"
+        },
+        {
+            "name": "headpat",
+            "description": "Dai una carezza sulla testa a un altro utente",
+            "usage": "headpat [@user]"
+        },
+        {
+            "name": "cry",
+            "description": "Esprimi che stai piangendo",
+            "usage": "cry"
+        },
+        {
+            "name": "bored",
+            "description": "Esprimi che sei annoiato",
+            "usage": "bored"
+        },
+        {
+            "name": "blush",
+            "description": "Esprimi che sei arrossito",
+            "usage": "blush"
+        },
+        {
+            "name": "dance",
+            "description": "Mostra i tuoi passi di danza!",
+            "usage": "dance"
+        },
+        {
+            "name": "ship",
+            "description": "Accoppia due utenti",
+            "usage": "ship [@user1] [@user2]"
+        },
+        {
+            "name": "social-medias",
+            "description": "Sfoglia i social media",
+            "usage": "social-medias [app] [query] [view]"
+        }
+    ],
+    "economy": [
+        "fa-wallet",
+        {
+            "name": "atm",
+            "description": "Yout wallet",
+            "usage": "atm [@user]"
+        },
+        {
+            "name": "daily",
+            "description": "Riscatta i tuoi Mystics giornalieri",
+            "usage": "daily"
+        },
+        {
+            "name": "pay",
+            "description": "Trasferisci i tuoi Mystics",
+            "usage": "pay [@user] [amount] [auto_confirm]"
+        },
+        {
+            "name": "leaderboard",
+            "description": "Classifica dei più ricchi",
+            "usage": "leaderboard"
+        },
+        {
+            "name": "shop",
+            "description": "Negozio di Sayuri",
+            "usage": "shop"
+        }
+    ],
+    "fun": [
+        "fa-gift",
+        {
+            "name": "minesweeper",
+            "description": "Gioca a Campo Minato",
+            "usage": "minesweeper"
+        },
+        {
+            "name": "tictactoe",
+            "description": "Gioca a Tris con me o con un amico",
+            "usage": "tictactoe [@user]"
+        }
+    ],
+    "ai": [
+        "fa-user-circle",
+        {
+            "name": "preference",
+            "description": "Configure your AI preferences",
+            "usage": "preference"
+        },
+        {
+            "name": "ai",
+            "description": "Chat with an AI",
+            "usage": "ai [prompt]"
+        },
+        {
+            "name": "imagine",
+            "description": "Create an image with AI",
+            "usage": "imagine [prompt]"
+        },
+        {
+            "name": "removebg",
+            "description": "Remove the background from your photos",
+            "usage": "removebg [image]"
+        },
+        {
+            "name": "upscale",
+            "description": "Improve the quality of your photos",
+            "usage": "upscale [image] [scale]"
+        }
+    ],
+    "others": [
+        "fa-cheese",
+        {
+            "name": "minecraft-user",
+            "description": "Lookup Minecraft user information",
+            "usage": "minecraft-user [minecraft-username]"
+        },
+        {
+            "name": "minecraft-server",
+            "description": "Lookup Minecraft server information",
+            "usage": "minecraft-server [url/server ip]"
+        },
+        {
+            "name": "music",
+            "description": "Lookup song information",
+            "usage": "music [song]"
+        },
+        {
+            "name": "pokédex",
+            "description": "Lookup information about Pokémon",
+            "usage": "pokédex [pokemon]"
+        },
+        {
+            "name": "periodic-table",
+            "description": "Lookup information about elements on the periodic table",
+            "usage": "periodic-table [element]"
+        },
+        {
+            "name": "genshin",
+            "description": "Lookup information about Genshin Impact. Categories: Characters, consumables/food, consumables/potions, enemies, elements",
+            "usage": "genshin [category] [name]"
+        },
+        {
+            "name": "anime",
+            "description": "See information about an anime",
+            "usage": "[name]"
+        }
+    ]
+}
