@@ -196,6 +196,19 @@
            "usage": "shop"
        }
     ],
+   "fun": [
+        "fa-user-circle",
+        {
+            "name": "minesweeper",
+            "description": "Play minesweeper",
+            "usage": "minesweeper"
+        },
+        {
+            "name": "tictactoe",
+            "description": "Chat with an AI",
+            "usage": "ai [prompt]"
+        },
+    ],
    "ai": [
         "fa-user-circle",
         {
