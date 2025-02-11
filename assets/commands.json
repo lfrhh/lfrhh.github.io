@@ -207,7 +207,7 @@
             "name": "tictactoe",
             "description": "Play tictactoe with me or any friend",
             "usage": "tictactoe [@user]"
-        },
+        }
     ],
    "ai": [
         "fa-user-circle",
