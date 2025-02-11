@@ -205,8 +205,8 @@
         },
         {
             "name": "tictactoe",
-            "description": "Chat with an AI",
-            "usage": "ai [prompt]"
+            "description": "Play tictactoe with me or any friend",
+            "usage": "tictactoe [@user]"
         },
     ],
    "ai": [
