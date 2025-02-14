@@ -108,6 +108,11 @@
             "usage": "reputation [@user]"
         },
         {
+            "name": "banners",
+            "description": "Backgrounds to decorate your profile",
+            "usage": "banners"
+        },
+        {
             "name": "kiss",
             "description": "Send a kiss to another user",
             "usage": "kiss [@user]"
@@ -167,34 +172,6 @@
             "description": "Browse social media",
             "usage": "social-medias [app] [query] [view]"
         }
-    ],
-   "economy": [
-        "fa-wallet",
-        {
-            "name": "atm",
-            "description": "Yout wallet",
-            "usage": "atm [@user]"
-        },
-        {
-            "name": "daily",
-            "description": "Redeem your daily Mystics",
-            "usage": "daily"
-        },
-        {
-            "name": "pay",
-            "description": "Transfer your mystics",
-            "usage": "pay [@user] [amount] [auto_confirm]"
-        },
-       {
-           "name": "leaderboard",
-           "description": "Ranking of the richest",
-           "usage": "leaderboard"
-       },
-       {
-           "name": "shop",
-           "description": "Sayuri's shop",
-           "usage": "shop"
-       }
     ],
    "fun": [
         "fa-gift",
