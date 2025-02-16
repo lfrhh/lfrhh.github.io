@@ -7,7 +7,6 @@
 - **Moderation**: Keep order in your server.
 - **Utilities**: Access handy tools to enhance your experience.
 - **Social**: Interact and have fun with friends.
-- **Economy**: A global economy for you and your friends to enjoy
 - **AI**: Functions with Artificial Intelligence!
 
 ## Getting Started
