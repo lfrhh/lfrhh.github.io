@@ -9,7 +9,7 @@
         {
             "name": "bye-setup",
             "description": "Configure server outgoing message",
-            "usage": "bye-setuo"
+            "usage": "bye-setup"
         },
         {
             "name": "autorole-user",
