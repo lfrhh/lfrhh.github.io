@@ -2,24 +2,24 @@
     "mod": [
         "fa-shield-alt",
         {
-            "name": "welcome-system",
+            "name": "welcome-setup",
             "description": "Configure the server's welcome message",
-            "usage": "welcome-system"
+            "usage": "welcome-setup"
         },
         {
-            "name": "bye-system",
+            "name": "bye-setup",
             "description": "Configure server outgoing message",
-            "usage": "bye-system"
+            "usage": "bye-setuo"
         },
         {
             "name": "autorole-user",
             "description": "Configure auto-role roles for users. (Up to 4 roles)",
-            "usage": "autorole-user [@role]"
+            "usage": "autorole-user --role1"
         },
         {
             "name": "autorole-app",
             "description": "Configure auto-role roles for apps. (Up to 4 roles)",
-            "usage": "autorole-app [@role]"
+            "usage": "autorole-app --role1"
         }
     ],
     "utils": [
@@ -42,27 +42,27 @@
         {
             "name": "avatar",
             "description": "Display the avatar of a user",
-            "usage": "avatar"
+            "usage": "avatar --user"
         },
         {
             "name": "weather",
             "description": "Get weather information for a location",
-            "usage": "weather [location]"
+            "usage": "weather --location"
         },
         {
             "name": "colorinfo",
             "description": "Accordion para exibir informações sobre cores.",
-            "usage": "colorinfo [color]"
+            "usage": "colorinfo --color"
         },
         {
             "name": "translate",
             "description": "Translate text between languages",
-            "usage": "translate [language] [text]"
+            "usage": "translate --language --text"
         },
         {
             "name": "userinfo",
             "description": "Display information about a user",
-            "usage": "userinfo [@user]"
+            "usage": "userinfo --user"
         },
         {
             "name": "serverinfo",
@@ -72,17 +72,17 @@
         {
             "name": "channelinfo",
             "description": "Display information about a channel",
-            "usage": "channelinfo [#channel]"
+            "usage": "channelinfo --channel"
         },
         {
             "name": "roleinfo",
             "description": "Display information about a role",
-            "usage": "roleinfo [@role]"
+            "usage": "roleinfo --role"
         },
         {
             "name": "emojiinfo",
             "description": "Display information about an emoji",
-            "usage": "emojiinfo [emoji]"
+            "usage": "emojiinfo --emoji"
         },
         {
             "name": "servericon",
@@ -100,12 +100,12 @@
         {
             "name": "profile",
             "description": "View your profile",
-            "usage": "profile [@user]"
+            "usage": "profile --user"
         },
         {
             "name": "reputation",
             "description": "Send a reputation to another user",
-            "usage": "reputation [@user]"
+            "usage": "reputation --user"
         },
         {
             "name": "banners",
@@ -115,32 +115,32 @@
         {
             "name": "kiss",
             "description": "Send a kiss to another user",
-            "usage": "kiss [@user]"
+            "usage": "kiss --user"
         },
         {
             "name": "hug",
             "description": "Give a hug to another user",
-            "usage": "hug [@user]"
+            "usage": "hug --user"
         },
         {
             "name": "slap",
             "description": "Give a slap to another user",
-            "usage": "slap [@user]"
+            "usage": "slap --user"
         },
         {
             "name": "bite",
             "description": "Bite another user",
-            "usage": "bite [@user]"
+            "usage": "bite --user"
         },
         {
             "name": "throw",
             "description": "Throw another user",
-            "usage": "throw [@user]"
+            "usage": "throw --user"
         },
         {
             "name": "headpat",
             "description": "Give a headpat to another user",
-            "usage": "headpat [@user]"
+            "usage": "headpat --user"
         },
         {
             "name": "cry",
@@ -165,12 +165,7 @@
         {
             "name": "ship",
             "description": "Ship two users together",
-            "usage": "ship [@user1] [@user2]"
-        },
-        {
-            "name": "social-medias",
-            "description": "Browse social media",
-            "usage": "social-medias [app] [query] [view]"
+            "usage": "ship --user_1 --user_2"
         }
     ],
    "fun": [
@@ -189,67 +184,37 @@
    "ai": [
         "fa-user-circle",
         {
-            "name": "preference",
-            "description": "Configure your AI preferences",
-            "usage": "preference"
-        },
-        {
             "name": "ai",
             "description": "Chat with an AI",
-            "usage": "ai [prompt]"
-        },
-        {
-            "name": "imagine",
-            "description": "Create an image with AI",
-            "usage": "imagine [prompt]"
-        },
-       {
-           "name": "removebg",
-           "description": "Remove the background from your photos",
-           "usage": "removebg [image]"
-       },
-       {
-           "name": "upscale",
-           "description": "Improve the quality of your photos",
-           "usage": "upscale [image] [scale]"
-       }
+            "usage": "ai --prompt"
+        }
     ],
     "others": [
         "fa-cheese",
         {
-            "name": "minecraft-user",
-            "description": "Lookup Minecraft user information",
-            "usage": "minecraft-user [minecraft-username]"
+            "name": "minecraft-player",
+            "description": "Lookup Minecraft player information",
+            "usage": "minecraft-player --user"
         },
         {
             "name": "minecraft-server",
             "description": "Lookup Minecraft server information",
-            "usage": "minecraft-server [url/server ip]"
+            "usage": "minecraft-server --server"
         },
         {
             "name": "music",
             "description": "Lookup song information",
-            "usage": "music [song]"
+            "usage": "music --name"
         },
         {
             "name": "pokédex",
             "description": "Lookup information about Pokémon",
-            "usage": "pokédex [pokemon]"
-        },
-        {
-            "name": "periodic-table",
-            "description": "Lookup information about elements on the periodic table",
-            "usage": "periodic-table [element]"
-        },
-        {
-            "name": "genshin",
-            "description": "Lookup information about Genshin Impact. Categories: Characters, consumables/food, consumables/potions, enemies, elements",
-            "usage": "genshin [category] [name]"
+            "usage": "pokédex --pokémon"
         },
         {
             "name": "anime",
             "description": "See information about an anime",
-            "usage": "[name]"
+            "usage": "anime --name"
         }
     ]
 }
